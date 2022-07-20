@@ -1,0 +1,168 @@
+body{
+    background-color: rgb(203, 203, 205);
+}
+a:link { 
+    text-decoration: none; color: black;
+} 
+a:visited {
+    color:black;
+}
+a:hover {
+    color:#262626;
+}
+a:active {
+    color:black;
+}
+.link:link { 
+    color: purple;
+} 
+.link:visited {
+    color:blue;
+}
+.link:hover {
+    color:rgb(184, 2, 184);
+}
+.link:active {
+    color: red;
+}
+.icon{
+    height: 100px;
+}
+.imag {
+    transition: transform .2s;
+    max-height: 150px; 
+    margin: 10px;
+}
+.imag:hover {
+    transform: scale(1.5); 
+}
+.img{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: flex-start;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr)); 
+    grid-template-rows: minmax(150px, 1fr); 
+           
+}
+.text-portfolio{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+.texto-portfolio{
+    margin: 5px;
+}
+.grid-portfolio-container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 95vw)); 
+    grid-template-rows:repeat(4, auto);
+}
+.center {
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    margin:5px;
+}
+.center2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    margin: 5px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text{
+    margin:0.3fr;
+    background-color: #8f8e8e;
+    background-size: auto;
+    border-radius: 5px;
+    display: block;
+    width: 60%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+}
+.card{
+    font-family: 'Marcellus', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    width: 75%;
+    height: 100%;
+    border: 3px solid #262626;
+    border-radius: 30px;
+    background-color: #ffffff;
+    background: linear-gradient(
+    179.86deg,
+    rgba(217, 217, 217, 0) 9.53%,
+    rgba(38, 38, 38, 0.43) 39.96%,
+    rgba(38, 38, 38, 0.681429) 65.42%,
+    #262626 99.18%);
+}
+.content-card{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+}
+.grid-container {
+    justify-items: center;
+    align-items: center;
+    background-image: url(./assets/fondo.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size:contain;
+    background-attachment:local;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-template-rows: minmax(1fr, 1.5fr);
+}
+.historia{
+    font-size: larger;
+    font-family: 'Marcellus', cursive;
+    padding: 10px;
+}
+.form1{
+    max-width: 200px;
+}
+.form2{
+    max-width: 170px;
+    padding-right: 42px;
+}
+.textarea{
+    max-width: 193px;
+}
+.datos{
+    display: block;
+}
+.gracias{
+    font-family: 'Marcellus', cursive;
+    width: 90vw;
+    grid-area: gracias;
+}
+.grid-gracias{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 5vw auto 5vw;
+    grid-template-rows:30vh auto 30vh;
+    grid-template-areas: 
+    ". . ."
+    ". gracias ."
+    ". . .";
+}
